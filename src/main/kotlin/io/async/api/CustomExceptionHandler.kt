@@ -26,6 +26,8 @@ class CustomExceptionHandler {
             ),
             dateTime = ZonedDateTime.now()
         )
+
+        // Consider to use try/catch for below
         val serializedErrorResponse = objectMapper.writeValueAsString(error)
 
         val headers = HttpHeaders()
